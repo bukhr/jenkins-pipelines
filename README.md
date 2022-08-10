@@ -47,3 +47,30 @@ Jenkins es un servidor de automatización y su principal componente son los pipe
 - Versátil: los pipelines admiten requisitos complejos de entrega continua del mundo real, incluidos hacer bucles y realizar trabajos en paralelo.
 
 - Extensible: el plugin Pipeline admite extensiones personalizadas para su DSL: domain specific language y múltiples opciones de integración con otros plugins.
+
+## Paths en todos los Jenkins controller que harán todo más sencillo.
+
+Debido a la gran cantidad de opciones y pasos que podemos hacer en jenkins existen algunos paths en el controller que son de gran ayuda:
+
+### http://localhost:8080/pipeline-syntax/
+
+Aquí podemos encontrar Snippet Generator, que son fragmentos de código que podemos utilizar en la sección "steps"
+
+### http://localhost:8080/directive-generator/
+
+Aquí podemos generar las secciones al interior de la sección stage('build'){ directive {} }
+
+### http://localhost:8080/env-vars.html/
+
+Variables de entornos por defecto en cada pipeline.
+
+# Lectura recomendada.
+
+Debemos conocer:
+
+https://www.jenkins.io/doc/book/pipeline/syntax/
+https://www.jenkins.io/user-handbook.pdf
+
+# Siguientes pasos.
+
+[PIPELINE](PIPELINE.md)
