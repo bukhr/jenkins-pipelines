@@ -3,6 +3,7 @@
 Existen 2 tipos de pipelines en Jenkins:
 
 1 Scripted
+
 2 Declarative
 
 ## Scripted
