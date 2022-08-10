@@ -12,6 +12,7 @@ Scripted ya no se recomienda pero está soportado por Jenkins, posee una complej
 
 Ejemplo:
 
+'''
 #### Jenkinsfile
 node {
   stage('Build') {
@@ -25,7 +26,7 @@ node {
   sh 'make publish'
   }
 }
-
+'''
 ## Declarative
 
 Declarative es la forma recomendada en la actualidad para crear pipelines, aquí es posible realizar todo lo que puedes hacer en scripted, incluso código groovy al interior de script{ def var = "example" }
@@ -81,7 +82,7 @@ stage("docker sidecar"){
 Un nodo es 1 máquina, física o virtual, con x cantidad de recursos.
 
 
-# Agentes (Archivo agent.jar que reporta al controller)
+# Agentes (Archivo agent.jar que reporta al controller, puede ser JNLP o SSH)
 
 Los agentes en Jenkins pueden ser del tipo Unix, Windows, Mac. Estos se agregan en Manage Jenkins > Manage nodes and clouds. Cada agente posee etiquetas, labels, que permiten diferenciarlos entre si, podemos declarar una gente principal en nuestro Jenkinsfile de la siguiente forma:
 
