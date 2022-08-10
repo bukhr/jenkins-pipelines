@@ -38,10 +38,12 @@ Este parámetro es uno de los más importantes de nuestro servidor, esta url def
 
 Jenkins es un servidor de automatización y su principal componente son los pipelines, las ventajas de utilizar pipelines son:
 
-• Código: los pipelines se implementan en el código y, por lo general, se encuentran como archivo Jenkinsfile en el código fuente, lo que proporciona
-equipos la capacidad de editar, revisar e iterar.
-• Duradero: los pipelines pueden sobrevivir tanto a los reinicios planificados como a los no planificados del servidor Jenkins.
-• Pausable: los pipelines pueden detenerse opcionalmente y esperar la aprobación o el aporte humano antes de
-continuando la ejecución.
-• Versátil: los pipelines admiten requisitos complejos de entrega continua del mundo real, incluidos hacer bucles y realizar trabajos en paralelo.
-• Extensible: el plugin Pipeline admite extensiones personalizadas para su DSL: domain specific language y múltiples opciones de integración con otros plugins.
+- Código: los pipelines se implementan en el código y, por lo general, se encuentran como archivo Jenkinsfile en el código fuente, lo que proporciona equipos la capacidad de editar, revisar e iterar.
+
+- Duradero: los pipelines pueden sobrevivir tanto a los reinicios planificados como a los no planificados del servidor Jenkins.
+
+- Pausable: los pipelines pueden detenerse opcionalmente y esperar la aprobación o el aporte humano antes de continuando la ejecución.
+
+- Versátil: los pipelines admiten requisitos complejos de entrega continua del mundo real, incluidos hacer bucles y realizar trabajos en paralelo.
+
+- Extensible: el plugin Pipeline admite extensiones personalizadas para su DSL: domain specific language y múltiples opciones de integración con otros plugins.
