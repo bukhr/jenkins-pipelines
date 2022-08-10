@@ -12,7 +12,7 @@ Scripted ya no se recomienda pero está soportado por Jenkins, posee una complej
 
 Ejemplo:
 
-'''
+```
 #### Jenkinsfile
 node {
   stage('Build') {
@@ -26,7 +26,7 @@ node {
   sh 'make publish'
   }
 }
-'''
+```
 ## Declarative
 
 Declarative es la forma recomendada en la actualidad para crear pipelines, aquí es posible realizar todo lo que puedes hacer en scripted, incluso código groovy al interior de script{ def var = "example" }
