@@ -33,3 +33,15 @@ Cada plugin y su documentación se puede encontrar aquí: https://plugins.jenkin
 Este parámetro es uno de los más importantes de nuestro servidor, esta url define al controlador mismo y su propia dirección, para la instalación local será http://localhost:8080, agentes e integraciones utilizan este endpoint para interactuar con el controlador, si necesitas publicar el servidor debemos cambiar este parámetro desde manage jenkins, por ejemplo: https://jenkins.midominio.com (tras un lb)
 
 ![jenkins url](/images/jenkins-url.png)
+
+# Pipeline.
+
+Jenkins es un servidor de automatización y su principal componente son los pipelines, las ventajas de utilizar pipelines son:
+
+• Código: los pipelines se implementan en el código y, por lo general, se encuentran como archivo Jenkinsfile en el código fuente, lo que proporciona
+equipos la capacidad de editar, revisar e iterar.
+• Duradero: los pipelines pueden sobrevivir tanto a los reinicios planificados como a los no planificados del servidor Jenkins.
+• Pausable: los pipelines pueden detenerse opcionalmente y esperar la aprobación o el aporte humano antes de
+continuando la ejecución.
+• Versátil: los pipelines admiten requisitos complejos de entrega continua del mundo real, incluidos hacer bucles y realizar trabajos en paralelo.
+• Extensible: el plugin Pipeline admite extensiones personalizadas para su DSL: domain specific language y múltiples opciones de integración con otros plugins.
