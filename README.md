@@ -69,8 +69,19 @@ Variables de entornos por defecto en cada pipeline.
 Debemos conocer:
 
 https://www.jenkins.io/doc/book/pipeline/syntax/
+
 https://www.jenkins.io/user-handbook.pdf
 
 # Siguientes pasos.
 
-[PIPELINE](PIPELINE.md)
+## Agent
+
+[Agents](/docs/agents.md)
+
+## Linter
+
+[Linter](/docs/linter.md)
+
+## Pipeline
+
+[PIPELINE](/docs/pipeline.md)
