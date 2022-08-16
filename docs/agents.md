@@ -80,16 +80,16 @@ Completamos la configuración relacionada con el plugin
 
 Algunos parámetros:
 
-AMI: id de ami a utilizar.
-Labels: nombre del agente, este es el nombre que utilizamos en agent { label 'small' }
-Remote user: ubuntu, ec2-user, admin, etc. Depende de la ami.
-Number of Executors: Cantidad de executors, debemos conocer la carga de trabajo para configurar este valor, se recomienda comenzar con 1.
-Connection Strategy: IP pública o IP privada.
-Block device mapping: /dev/sda1=:500 mapeamos la cantidad de disco y el punto de montaje deseado(revisar AMI)
-Init-Script: comandos que correrán en el agente al bootear(apt update && apt install docker.io ...)
-Subnets: subnets id separados por coma.
-Availability Zone: Ids separadas por coma.
-Instance Type: Seleccionamos tipo de instancia.
-Tags: lleva:valor para identificar en EC2 nuestros agentes.
-Security group names: nombre del sg que se asociará al agente.
-Idle termination time: Si el agente no tiene pipelines asignados, se esperará este tiempo en minutos para su borrado/apagado.
+- AMI: id de ami a utilizar.
+- Labels: nombre del agente, este es el nombre que utilizamos en agent { label 'small' }
+- Remote user: ubuntu, ec2-user, admin, etc. Depende de la ami.
+- Number of Executors: Cantidad de executors, debemos conocer la carga de trabajo para configurar este valor, se recomienda comenzar con 1.
+- Connection Strategy: IP pública o IP privada.
+- Block device mapping: /dev/sda1=:500 mapeamos la cantidad de disco y el punto de montaje deseado(revisar AMI)
+- Init-Script: comandos que correrán en el agente al bootear(apt update && apt install docker.io ...)
+- Subnets: subnets id separados por coma.
+- Availability Zone: Ids separadas por coma.
+- Instance Type: Seleccionamos tipo de instancia.
+- Tags: lleva:valor para identificar en EC2 nuestros agentes.
+- Security group names: nombre del sg que se asociará al agente.
+- Idle termination time: Si el agente no tiene pipelines asignados, se esperará este tiempo en minutos para su borrado/apagado.
