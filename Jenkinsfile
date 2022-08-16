@@ -10,6 +10,8 @@ pipeline{
         RANDOM_VALUE = sh(script: 'shuf -n 1 -e 1 22 333 4444 55555 666666',returnStdout: true).trim()
         ULTRA_SECRET_TOKEN = credentials('some-secret-text')
         ALL_MY_ENVS_WHY_NOT = """${DOCKER_IMAGE}-${AWS_ACCOUNT}/${RANDOM_VALUE}---${ULTRA_SECRET_TOKEN}"""
+        PUBLIC_IP = sh(script: 'curl ifconfig.me',returnStdout: true).trim()
+
     }
     triggers{
         cron('H 13 * * *') // H viene de hash, quiere decir que si multiples jobs se declaran con el mismo crontab no se lanzan juntos, si no que garantiza que se  lancen en ese periodo, aqui es: en algún minuto de esa hora.
@@ -30,6 +32,7 @@ pipeline{
                 echo Este es el stage $STAGE_NAME
                 date
                 """
+                echo "Mi ip es $PUBLIC_IP"
             }
             post{
                 always{
