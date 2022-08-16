@@ -19,7 +19,7 @@ pipeline{
     options {parallelsAlwaysFailFast()
              timeout(time: 2, unit: "MINUTES")
              disableConcurrentBuilds(abortPrevious: true)}
-    parameters{
+    parameters{ // cuando hacemos un pipeline parametrizado, el pipeline debe ejecutarse 1 vez para que jenkins lea estos valores y se preseten como parametros en la interfaz gráfica.
             string(name: 'COLOR', defaultValue: "negro", description: 'tu color')
             string(name: 'FRUTA', defaultValue: 'manzana', description: 'alguna frutita')
             string(name: 'NOMBRE', defaultValue: 'juan', description: 'tu nombre')
@@ -120,6 +120,16 @@ pipeline{
                     }
                 }
             }
+        }
+
+        stage("aws"){
+            steps {
+                withAWS(region: 'us-east-1', credentials) {
+                  sh """aws sts get-caller-identity"""
+                }
+                withAWS(region: 'us-west-2') {
+                  sh """aws sts get-caller-identity"""
+                }
         }
 
         stage("burger") {

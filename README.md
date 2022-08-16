@@ -85,3 +85,7 @@ https://www.jenkins.io/user-handbook.pdf
 ## Pipeline
 
 [PIPELINE](/docs/pipeline.md)
+
+## Pipeline
+
+[Logs](/docs/logs.md)
