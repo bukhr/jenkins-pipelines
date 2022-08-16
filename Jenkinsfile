@@ -17,7 +17,7 @@ pipeline{
         cron('H 13 * * *') // H viene de hash, quiere decir que si multiples jobs se declaran con el mismo crontab no se lanzan juntos, si no que garantiza que se  lancen en ese periodo, aqui es: en algún minuto de esa hora.
     }
     options {parallelsAlwaysFailFast()
-             timeout(time: 180, unit: "MINUTES")
+             timeout(time: 2, unit: "MINUTES")
              disableConcurrentBuilds(abortPrevious: true)}
     parameters{
             string(name: 'COLOR', defaultValue: "negro", description: 'tu color')
