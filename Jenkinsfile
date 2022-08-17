@@ -124,10 +124,10 @@ pipeline{
 
         stage("aws"){
             steps {
-                withAWS(region: 'us-east-1', credentials) {
+                withAWS(region: 'us-east-1', credentials: "account-1") {
                   sh """aws sts get-caller-identity"""
                 }
-                withAWS(region: 'us-west-2') {
+                withAWS(region: 'us-west-2', credentials: "account-2") {
                   sh """aws sts get-caller-identity"""
                 }
         }
