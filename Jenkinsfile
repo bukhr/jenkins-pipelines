@@ -41,7 +41,7 @@ pipeline{
             sh """
             container=\$(docker run -d -p $RANDOM_PORT:35000 $ECR:dievops python hello.py)
             docker ps -a
-            sleep 10
+            sleep 10 #para bootear la app
             curl -v localhost:$RANDOM_PORT || docker kill \$container
             docker kill \$container
             """
