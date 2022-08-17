@@ -86,6 +86,17 @@ https://www.jenkins.io/user-handbook.pdf
 
 [PIPELINE](/docs/pipeline.md)
 
-## Pipeline
+## Logs
 
 [Logs](/docs/logs.md)
+
+## Jenkinsfile
+
+[Logs](/docs/jenkinsfile.md)
+
+## Github
+
+[Logs](/docs/github.md)
+
+
+
