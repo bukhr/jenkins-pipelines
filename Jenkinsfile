@@ -40,6 +40,7 @@ pipeline{
             steps {
             sh """
             container=\$(docker run -d -p $RANDOM_PORT:35000 $ECR:dievops python hello.py)
+            docker ps -a
             curl localhost:$RANDOM_PORT || docker kill \$container
             sleep 10
             docker kill \$container
