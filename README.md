@@ -84,7 +84,7 @@ https://www.jenkins.io/user-handbook.pdf
 
 ## Pipeline
 
-[PIPELINE](/docs/pipeline.md)
+[Pipeline](/docs/pipeline.md)
 
 ## Logs
 
@@ -92,11 +92,11 @@ https://www.jenkins.io/user-handbook.pdf
 
 ## Jenkinsfile
 
-[Logs](/docs/jenkinsfile.md)
+[Jenkinsfile](/docs/jenkinsfile.md)
 
 ## Github
 
-[Logs](/docs/github.md)
+[Github](/docs/github.md)
 
 
 
