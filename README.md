@@ -98,5 +98,6 @@ https://www.jenkins.io/user-handbook.pdf
 
 [Github](/docs/github.md)
 
+## Taller
 
-
+[Tarea](/docs/taller.md)
