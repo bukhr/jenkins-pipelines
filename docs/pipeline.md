@@ -127,3 +127,15 @@ export VARIABLE_A="A"
 echo \$VARIABLE_A //esta es la variable declarada en la shell.
 echo $VARIABLE_Z //esta es la variable de entorno declarada en el jenkinsfile.
 """
+
+## Stash/Unstash
+
+Para guardar archivos generados en el workspace y ser utilizados por otro agente o en otra parte de pipeline.
+
+```
+stash allowEmpty: true, includes: 'report.xml', name: 'report'
+```
+
+```
+unstash 'report.xml'
+```
