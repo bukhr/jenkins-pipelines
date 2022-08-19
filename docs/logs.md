@@ -1,8 +1,8 @@
 # Jenkins logs
 
-Aquí podemos encontrar logs relacionados con el controlador y plugins, debemos configurar el logger para ver eventos de plugins, por defecto existe All Jenkins Logs, aquí veremos logs generales del controlador.
-
 JENKINS_URL/log
+
+Podemos encontrar logs relacionados con el controlador y plugins, debemos configurar el logger para ver eventos de plugins, por defecto existe All Jenkins Logs donde veremos logs generales del controlador.
 
 # Log Recorders
 
@@ -15,3 +15,5 @@ En este ejemplo, comenzamos a escribir docker y se mostrará una lista de logs q
 Viendo logs!
 
 ![docker-logs](/images/docker-plugin-logs.png)
+
+Es recomendable mirar estos logs cuando tenemos algún problema en nuestros pipelines que no podemos detectar desde los logs del job.
