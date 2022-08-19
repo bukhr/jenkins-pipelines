@@ -1,14 +1,14 @@
 # Taller Jenkins.
 
-Vamos a construir algo!.
+Vamos a construir algo!
 
-Necesitamos realizar el siguiente pipeline en Jenkins:
+Nuestro equipo necesita realizar un pipeline en jenkins con los siguientes requerimientos:
 
 - Source: Github
 - Stages: Build, Test, Deploy.
 - Build: construir imagen docker y pushear a un ecr
 - Test: 1 linter con Pylint que permita fallar sin declarar el pipeline como fallido.
-- Deploy: correr la app con docker y validar con curl..
+- Deploy: correr la app con docker y validar con curl.
 
 Pasos:
 
@@ -18,4 +18,5 @@ Pasos:
 4. En Branches to build ingresar "**" o dejar en blanco.
 4. Repository URL: https://github.com/org/jenkins-training, donde org es tu organización o nombre.
 5. Escribir el Jenkinsfile.
-6. Pasar el Linter al Jenkinsfile antes de pushear.
+6. Pasar el Linter al Jenkinsfile.
+7. Iterar
