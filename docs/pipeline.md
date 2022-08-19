@@ -6,7 +6,7 @@ Aquí se describe algunos conceptos sobre pipelines.
 
 Antes de comenzar veremos una de las cosas más importantes, el $WORKSPACE.
 
-WORKSPACE es nuestro directorio de trabajo, aquí se clona el repositorio, se archivan artefactos otras operaciones.
+WORKSPACE es nuestro directorio de trabajo, aquí se clona el repositorio, se archivan artefactos y otras operaciones.
 
 Cuando ocupamos un agent {docker {..} }, jenkins monta en el container la misma ruta worskpace, por ejemplo:
 
@@ -18,7 +18,7 @@ En el container con docker:
 
 docker run -t -v $WORSPACE:/home/ubuntu/workspace/main (-v $WORSPACE:$WORSPACE)
 
-Esto quiere decir que nuestro directorio de trabajo se encuentra montado al interior del contenedor.
+Esto quiere decir que nuestro directorio de trabajo se encuentra montado al interior del contenedor por defecto.
 
 ## Variables de entorno
 
@@ -119,6 +119,7 @@ Las variables pueden ser llamadas como $VARIABLE si se declaran como variable de
 
 Una variable declarada en un script debe incluir un caracter de escape:
 
+```
 environment {
   VARIABLE_Z="Z"
 }
@@ -127,6 +128,7 @@ export VARIABLE_A="A"
 echo \$VARIABLE_A //esta es la variable declarada en la shell.
 echo $VARIABLE_Z //esta es la variable de entorno declarada en el jenkinsfile.
 """
+```
 
 ## Stash/Unstash
 
