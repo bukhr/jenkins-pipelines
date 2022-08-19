@@ -12,7 +12,7 @@ Para configurar webhooks entre github y jenkins debemos habilitar GitHub hook tr
 
 ![github-build-trigger](/images/github-build-trigger.png)
 
-Por defecto, el plugin de github recibe webhooks en JENKINS_URL/github-webhook/ y si el repositorio que envía el webhook coincide con el repositorioa configurado en Jenkins se lanzará un build nuevo.
+Por defecto, el plugin de github recibe webhooks en JENKINS_URL/github-webhook/ y si el repositorio que envía el webhook coincide con el repositorio configurado en Jenkins se lanzará un build nuevo.
 
 ![github-webhook](/images/github-webhook.png)
 
