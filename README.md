@@ -105,3 +105,8 @@ https://www.jenkins.io/user-handbook.pdf
 ## Taller
 
 [Tarea](/docs/taller.md)
+
+## Caso buk-webapp
+
+https://github.com/bukhr/jenkinsfile
+https://github.com/bukhr/buk-jenkins-shared-library
