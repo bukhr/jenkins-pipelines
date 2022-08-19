@@ -100,7 +100,7 @@ https://www.jenkins.io/user-handbook.pdf
 
 ## Jenkinsfile Guía
 
-[Github](/jenkinsfile-helper/Jenkinsfile)
+[Jenkinsfile](/jenkinsfile-helper/Jenkinsfile)
 
 ## Taller
 
