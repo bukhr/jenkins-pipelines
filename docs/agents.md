@@ -86,7 +86,8 @@ Algunos parámetros:
 - Number of Executors: Cantidad de executors, debemos conocer la carga de trabajo para configurar este valor, se recomienda comenzar con 1.
 - Connection Strategy: IP pública o IP privada.
 - Block device mapping: /dev/sda1=:500 mapeamos la cantidad de disco y el punto de montaje deseado(revisar AMI)
-- Init-Script: comandos que correrán en el agente al bootear(apt update && apt install docker.io ...)
+- user-data: comandos que correrán como root al bootear una instancia.
+- Init-Script: comandos que correrán en el agente después del boot mediante SSH(apt update && apt install docker.io ...)
 - Subnets: subnets id separados por coma.
 - Availability Zone: Ids separadas por coma.
 - Instance Type: Seleccionamos tipo de instancia.
