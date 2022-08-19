@@ -78,13 +78,13 @@ https://www.jenkins.io/user-handbook.pdf
 
 [Agents](/docs/agents.md)
 
-## Jenkinsfile
-
-[Jenkinsfile](/docs/jenkinsfile.md)
-
 ## Pipeline
 
 [Pipeline](/docs/pipeline.md)
+
+## Jenkinsfile
+
+[Jenkinsfile](/docs/jenkinsfile.md)
 
 ## Linter
 
