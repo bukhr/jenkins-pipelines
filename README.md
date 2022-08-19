@@ -48,7 +48,7 @@ Jenkins es un servidor de automatización y su principal componente son pipeline
 
 - Extensible: el plugin Pipeline admite extensiones personalizadas para su DSL: domain specific language y múltiples opciones de integración con otros plugins.
 
-## Paths en todos los Jenkins controller que harán todo más sencillo.
+## Paths en Jenkins controller que son de gran ayuda.
 
 Debido a la gran cantidad de opciones y pasos que podemos hacer en jenkins existen algunos paths en el controller que son de gran ayuda:
 
