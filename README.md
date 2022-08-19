@@ -1,6 +1,6 @@
 # Jenkins Pipeline Training
 
-Este proyecto busca implementar un pipeline para entender conceptos y funcionamiento de jenkins declarative pipeline.
+Este proyecto busca implementar un proyecto sencillo para entender conceptos y funcionamiento de jenkins declarative pipeline.
 
 Para profundizar aún más es recomendable leer: https://www.jenkins.io/user-handbook.pdf
 
