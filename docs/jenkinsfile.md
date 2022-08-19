@@ -59,3 +59,15 @@ pipeline {
         }
 }
 ```
+
+## Shared libraries
+
+Con el fin de ampliar aún más la funcionalidad del Jenkinsfile, podemos utilizar shared libraries, esto nos permite generar fragmentos de código en otro repositorio para ser utilizados por nuestro pipeline.
+
+###
+
+Estructura de shared libraries.
+
+https://www.jenkins.io/doc/book/pipeline/shared-libraries/#defining-shared-libraries
+
+Podemos importar la librería en nuestro Jenkins con @library name@branch, sin embargo esto se considera inseguro para el sandbox de jenkins.

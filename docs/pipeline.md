@@ -2,6 +2,13 @@
 
 Aquí se describe algunos conceptos sobre pipelines.
 
+# Sandbox
+
+Todas las instrucciones que apliquemos en nuestro pipeline corren en un sandbox, principalmente para impedir la ejecución de código malicioso en el agente/controller. Esto quiere decir que el uso de clases de API desde scripts groovy o jenkinsfile no están permitidos y deben ser aprobados por un administrador.
+
+https://www.jenkins.io/doc/book/managing/script-approval/#script-approval
+
+
 # WORKSPACE
 
 Antes de comenzar veremos una de las cosas más importantes, el $WORKSPACE.
