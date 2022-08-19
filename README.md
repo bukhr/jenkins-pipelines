@@ -78,21 +78,21 @@ https://www.jenkins.io/user-handbook.pdf
 
 [Agents](/docs/agents.md)
 
-## Linter
+## Jenkinsfile
 
-[Linter](/docs/linter.md)
+[Jenkinsfile](/docs/jenkinsfile.md)
 
 ## Pipeline
 
 [Pipeline](/docs/pipeline.md)
 
+## Linter
+
+[Linter](/docs/linter.md)
+
 ## Logs
 
 [Logs](/docs/logs.md)
-
-## Jenkinsfile
-
-[Jenkinsfile](/docs/jenkinsfile.md)
 
 ## Github
 
