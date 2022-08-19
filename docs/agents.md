@@ -14,7 +14,7 @@ Un nodo es 1 máquina, física o virtual, con x cantidad de recursos.
 
 El agente puede interpretarse como el proceso agent.jar que reporta al controller logs, estado de la máquina. Este agente puede ser JNLP o SSH, se recomiendo agregar agentes utilizando SSH.
 
-Los agentes en Jenkins pueden ser del tipo Unix, Windows, Mac. Estos se agregan en Manage Jenkins > Manage nodes and clouds. Cada agente posee etiquetas/labels, que permiten diferenciarlos entre si, podemos declarar una gente principal en nuestro Jenkinsfile de la siguiente forma:
+Los agentes en Jenkins pueden ser del tipo Unix, Windows, Mac. Estos se agregan en Manage Jenkins > Manage nodes and clouds. Cada agente posee etiquetas/labels, que permiten diferenciarlos entre si, podemos referenciar un agente en nuestro Jenkinsfile.
 
 # Executor
 
