@@ -24,7 +24,7 @@ docker run -it -p 8080:8080 --rm jenkins/jenkins
 
 ## Sobre Plugins.
 
-Se recomienda instalar solo plugins necesarios tu jenkins controller productivo, sin embargo muchos plugins poseen dependencias que hacen necesarios instalar componentes adicionales.
+Se recomienda instalar solo plugins necesarios en jenkins controller productivos, sin embargo muchos plugins poseen dependencias que hacen necesarios instalar componentes adicionales.
 
 Cada plugin y su documentación se puede encontrar aquí: https://plugins.jenkins.io/
 
