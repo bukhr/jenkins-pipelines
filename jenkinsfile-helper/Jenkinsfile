@@ -131,6 +131,7 @@ pipeline{
                   sh """aws sts get-caller-identity"""
                 }
         }
+        }
 
         stage("burger") {
             steps {
@@ -170,7 +171,6 @@ pipeline{
                 build job: 'sre-jenkins-training', parameters: [string(name: 'COMIDA', value: "$STAGE_NAME")]
             }
         }
-
     }
 
     post{
