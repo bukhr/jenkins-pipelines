@@ -130,7 +130,16 @@ echo $VARIABLE_Z //esta es la variable de entorno declarada en el jenkinsfile.
 """
 ```
 
-## Stash/Unstash
+## Stash y Artifacts.
+
+Podemos almancer de forma temporal algún resultado con stash o de forma permanente como Artifact.
+
+Jenkins puede funcionar utilizando S3 como sistema de almacenamiento para almacenar tanto stash como artifact con el plugin artifact manager s3, esto quita carga al disco de jenkins y evita quedarnos sin espacio.
+
+https://plugins.jenkins.io/artifact-manager-s3/
+
+
+### Stash/Unstash - Por defecto desde $WORKSPACE
 
 Para guardar archivos generados en el workspace y ser utilizados por otro agente o en otra parte de pipeline.
 
@@ -141,3 +150,12 @@ stash allowEmpty: true, includes: 'report.xml', name: 'report'
 ```
 unstash 'report.xml'
 ```
+
+### Artifacts - Por defecto desde $WORKSPACE
+
+Para archivar artefactos:
+
+```
+archiveArtifacts allowEmptyArchive: true, artifacts: 'report-*.xml', followSymlinks: false
+```
+
