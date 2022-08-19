@@ -36,9 +36,9 @@ Este parámetro es uno de los más importantes de nuestro servidor, esta url def
 
 # Pipeline.
 
-Jenkins es un servidor de automatización y su principal componente son los pipelines, las ventajas de utilizar pipelines son:
+Jenkins es un servidor de automatización y su principal componente son pipelines, las ventajas de utilizar pipelines son:
 
-- Código: los pipelines se implementan en el código y, por lo general, se encuentran como archivo Jenkinsfile en el código fuente, lo que proporciona equipos la capacidad de editar, revisar e iterar.
+- Código: los pipelines se implementan en el código y, por lo general, se encuentran como archivo Jenkinsfile en el código fuente, lo que proporciona a equipos la capacidad de editar, revisar e iterar.
 
 - Duradero: los pipelines pueden sobrevivir tanto a los reinicios planificados como a los no planificados del servidor Jenkins.
 
