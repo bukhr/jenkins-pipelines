@@ -160,12 +160,12 @@ pipeline{
             steps {
                 catchError(buildResult: 'SUCCESS', message: 'esto falla no hay key ssh', stageResult: 'FAILURE') { //build result=resultado del pipeline. stageResult=estado del stage
                 sh """
-                git clone git@gitlab.com:bukhr/buk-webapp.git
+                git clone git@gitlab.com:org/domain-webapp.git
                 """
                 }
                 sshagent(['bermuditas-ssh']) {
                 sh """
-                git clone git@gitlab.com:bukhr/buk-webapp.git
+                git clone git@gitlab.com:org/domain-webapp.git
                 """
                 }
                 build job: 'sre-jenkins-training', parameters: [string(name: 'COMIDA', value: "$STAGE_NAME")]

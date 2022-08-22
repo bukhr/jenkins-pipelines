@@ -21,7 +21,7 @@ curl --user user:api-token -X POST -F "jenkinsfile=<Jenkinsfile" https://JENKINS
 Ejemplo:
 
 ```
-curl --user dmunoz@buk.cl:119da51cd678b61f9acdeacd038097a241 -X POST -F "jenkinsfile=<Jenkinsfile" https://jenkins.infra.buk.cl/pipeline-model-converter/validate
+curl --user dmunoz@domain.cl:119da51cd678b61f9acdeacd038097a241 -X POST -F "jenkinsfile=<Jenkinsfile" https://jenkins.domain.cl/pipeline-model-converter/validate
 ```
 
 ## Vscode extension 
@@ -31,7 +31,7 @@ https://github.com/janjoerke/vscode-jenkins-pipeline-linter-connector
 Agregamos a nuestro settings.json:
 
 ```
-"jenkins.pipeline.linter.connector.url": "https://jenkins.infra.buk.cl/pipeline-model-converter/validate",
-"jenkins.pipeline.linter.connector.user": "dmunoz@buk.cl",
+"jenkins.pipeline.linter.connector.url": "https://jenkins.domain.cl/pipeline-model-converter/validate",
+"jenkins.pipeline.linter.connector.user": "dmunoz@domain.cl",
 "jenkins.pipeline.linter.connector.token": "119da51cd678b61f9acdeacd038097a241",
 ```
